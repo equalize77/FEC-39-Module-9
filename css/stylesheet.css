@@ -7,23 +7,28 @@
     margin: 0 auto;
     
 }
+@media (min-width: 320px) {
 .header {
     background-image: url(../img/background2.jpg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
     padding: 38px 40px;
     min-height: auto;
     padding-top: 20px;
 }
+/* .header-items {
+    min-width: 320px;
+    margin: 0 auto;
+} */
 /* .container {
     min-width: 320px;
     max-width: 940px;
 } */
 .header-items-log {
-    min-width: 90px;
-    min-height: 36px;
-}
+    min-width: 260px;
+    min-height: 38px;
+    margin: 0 auto;
+}  
 .log-in {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -31,7 +36,6 @@
     font-size: 14px;
     color: #fff;
     padding: 10px 16px;
-    
 }
 .log-in:hover {
     border: 3px solid #fff;
@@ -40,12 +44,12 @@
     text-decoration: none;
 }
 .sign-up {
-    text-decoration: none;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #fff;
-    padding: 10px 16px;
+    padding: 10px 16px; 
 }
 .sign-up:hover {
     border: 3px solid #fff;
@@ -55,8 +59,10 @@
 }
 .header-items {
     margin-bottom: 116px;
+    text-align: center;
 }
 .logo {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -66,6 +72,11 @@
 }
 .logo-box {
     margin-bottom: 36px;
+    min-width: 175px;
+    text-align: center;
+}
+.holder-logo {
+    margin: 0 auto;
 }
 .header-title {
     font-family: 'Montserrat', sans-serif;
@@ -76,9 +87,7 @@
     text-align: center;
     
 }
-.header-title-box {
-    
-}
+
 .header-p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -87,6 +96,9 @@
     text-align: center;
      width: 224px;
     margin: 0 auto 20px;
+}
+.button-box {
+    margin: 0 auto;
 }
 .header-button {
     min-width: 280px;
@@ -109,6 +121,7 @@
     padding-top: 68px;
     margin-bottom: 18px;
 }
+
 .img-holder {
     width: 122px;
     height: 122px;
@@ -116,7 +129,7 @@
     position: relative;
 }
 .card-holder {
-    width: 236px;
+    min-width: 236px;
     margin: 0 auto 30px;
 
 }
@@ -217,6 +230,7 @@
     font-size: 14px;
     color: #ff4e50;
 }
+}
 @media (min-width: 768px) {
     .header {
         min-width: 768px;
@@ -226,8 +240,12 @@
         margin-bottom: 160px;
     }
     .header-items-log {
-        display: flex;
-        min-width: 200px;
+        display: inline-block;
+        margin: 0 auto;
+        min-width: 320px;
+    }
+    .sign-up {
+        margin-left: 10px;
     }
     .menu-box {
         display: flex;
@@ -257,10 +275,12 @@
         display: flex;
         justify-content: center;
     }
-    .card-holder:nth-child(2n) {
+    /* .card-holder:nth-child(2n) {
         margin-bottom: 38px;
-    }
+    } */
 }
 @media (min-width: 940px) {
-    
+   .card-holder-box {
+       height: 100%;
+   }
 }
